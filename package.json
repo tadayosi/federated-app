@@ -6,6 +6,8 @@
     "packages/*"
   ],
   "scripts": {
+    "start:core": "yarn workspace core start",
+    "start:plugin1": "yarn workspace plugin1 start",
     "format": "yarn prettier --write ."
   },
   "devDependencies": {
