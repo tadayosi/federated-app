@@ -1,0 +1,8 @@
+{
+  "name": "federated-app",
+  "private": true,
+  "workspaces": [
+    "packages/*"
+  ],
+  "packageManager": "yarn@3.5.0"
+}
