@@ -4,5 +4,11 @@
   "workspaces": [
     "packages/*"
   ],
+  "scripts": {
+    "format": "yarn prettier --write ."
+  },
+  "devDependencies": {
+    "prettier": "^2.8.4"
+  },
   "packageManager": "yarn@3.5.0"
 }
