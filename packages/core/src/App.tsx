@@ -1,11 +1,12 @@
-import React from 'react'
+import { plugin } from 'plugin1/plugin'
 
-export const App = () => (
-  <div>
-    <h1>App</h1>
-    <p>Hello!</p>
-    <React.Suspense fallback='Loading ...'>
-      <p>Plugin 1</p>
-    </React.Suspense>
-  </div>
-)
+export const App = () => {
+  plugin()
+
+  return (
+    <div>
+      <h1>App</h1>
+      <p>Hello!</p>
+    </div>
+  )
+}
