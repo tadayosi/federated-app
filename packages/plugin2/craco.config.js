@@ -6,9 +6,10 @@ module.exports = {
     plugins: {
       add: [
         new ModuleFederationPlugin({
-          name: 'core',
-          remotes: {
-            plugin1: 'plugin1@http://localhost:3001/remoteEntry.js',
+          name: 'plugin2',
+          filename: 'remoteEntry.js',
+          exposes: {
+            './plugin': './src/plugin',
           },
           shared: {
             ...dependencies,
@@ -28,8 +29,6 @@ module.exports = {
       output: {
         publicPath: 'auto',
       },
-      // For suppressing sourcemap warnings from @module-federation/utilities
-      ignoreWarnings: [/Failed to parse source map/],
     },
   },
 }

@@ -8,6 +8,7 @@
   "scripts": {
     "start:core": "yarn workspace core start",
     "start:plugin1": "yarn workspace plugin1 start",
+    "start:plugin2": "yarn workspace plugin2 start",
     "format": "yarn prettier --write ."
   },
   "devDependencies": {

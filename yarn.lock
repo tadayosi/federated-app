@@ -2187,6 +2187,25 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@module-federation/utilities@npm:^1.4.0":
+  version: 1.4.0
+  resolution: "@module-federation/utilities@npm:1.4.0"
+  peerDependencies:
+    next: ^12 || ^13
+    react: ^16 || ^17 || ^18
+    react-dom: ^16 || ^17 || ^18
+    webpack: ^5.40.0
+  peerDependenciesMeta:
+    next:
+      optional: true
+    react:
+      optional: true
+    react-dom:
+      optional: true
+  checksum: aa707a873c0dc208a6bccc34a025b7ea58dbec7bd3f24a29cfd3559bde4de8e6e36cc66e842d2b59f36fe69c7024710304f97da780f67759c5ce9f08a80bb8e2
+  languageName: node
+  linkType: hard
+
 "@nicolo-ribaudo/eslint-scope-5-internals@npm:5.1.1-v1":
   version: 5.1.1-v1
   resolution: "@nicolo-ribaudo/eslint-scope-5-internals@npm:5.1.1-v1"
@@ -4695,6 +4714,7 @@ __metadata:
   dependencies:
     "@craco/craco": ^7.1.0
     "@craco/types": ^7.1.0
+    "@module-federation/utilities": ^1.4.0
     "@testing-library/jest-dom": ^5.16.5
     "@testing-library/react": ^13.4.0
     "@testing-library/user-event": ^13.5.0
@@ -9636,6 +9656,27 @@ __metadata:
 "plugin1@workspace:packages/plugin1":
   version: 0.0.0-use.local
   resolution: "plugin1@workspace:packages/plugin1"
+  dependencies:
+    "@craco/craco": ^7.1.0
+    "@craco/types": ^7.1.0
+    "@testing-library/jest-dom": ^5.16.5
+    "@testing-library/react": ^13.4.0
+    "@testing-library/user-event": ^13.5.0
+    "@types/jest": ^27.5.2
+    "@types/node": ^16.18.16
+    "@types/react": ^18.0.28
+    "@types/react-dom": ^18.0.11
+    react: ^18.2.0
+    react-dom: ^18.2.0
+    react-scripts: 5.0.1
+    typescript: ^4.9.5
+    web-vitals: ^2.1.4
+  languageName: unknown
+  linkType: soft
+
+"plugin2@workspace:packages/plugin2":
+  version: 0.0.0-use.local
+  resolution: "plugin2@workspace:packages/plugin2"
   dependencies:
     "@craco/craco": ^7.1.0
     "@craco/types": ^7.1.0

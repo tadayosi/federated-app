@@ -1,12 +1,12 @@
 import { plugin } from 'plugin1/plugin'
+import { dynamicLoading } from './dynamic-loading'
 
-export const App = () => {
-  plugin()
+plugin()
+dynamicLoading()
 
-  return (
-    <div>
-      <h1>App</h1>
-      <p>Hello!</p>
-    </div>
-  )
-}
+export const App = () => (
+  <div>
+    <h1>App</h1>
+    <p>Hello!</p>
+  </div>
+)
