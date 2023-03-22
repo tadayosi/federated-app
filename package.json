@@ -6,12 +6,14 @@
     "packages/*"
   ],
   "scripts": {
+    "start": "concurrently 'yarn:start:*'",
     "start:core": "yarn workspace core start",
     "start:plugin1": "yarn workspace plugin1 start",
     "start:plugin2": "yarn workspace plugin2 start",
     "format": "yarn prettier --write ."
   },
   "devDependencies": {
+    "concurrently": "^7.6.0",
     "prettier": "^2.8.4"
   },
   "packageManager": "yarn@3.5.0"
