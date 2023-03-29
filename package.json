@@ -6,14 +6,15 @@
     "packages/*"
   ],
   "scripts": {
-    "start": "concurrently 'yarn:start:*'",
+    "start": "yarn build:shared && concurrently 'yarn:start:*'",
     "start:core": "yarn workspace core start",
     "start:plugin1": "yarn workspace plugin1 start",
     "start:plugin2": "yarn workspace plugin2 start",
-    "build": "concurrently 'yarn:build:*'",
+    "build": "yarn build:shared && concurrently 'yarn:build:*(!shared)'",
     "build:core": "yarn workspace core build",
     "build:plugin1": "yarn workspace plugin1 build",
     "build:plugin2": "yarn workspace plugin2 build",
+    "build:shared": "yarn workspace @tadayosi/shared build",
     "format": "yarn prettier --write .",
     "deploy": "concurrently -m 1 'yarn:deploy:*'",
     "deploy:core": "yarn workspace core deploy",

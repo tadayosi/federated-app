@@ -21,6 +21,10 @@ module.exports = {
               singleton: true,
               requiredVersion: dependencies['react-dom'],
             },
+            '@tadayosi/shared': {
+              singleton: true,
+              requiredVersion: '^0.1.0',
+            },
           },
         }),
       ],
@@ -29,6 +33,8 @@ module.exports = {
       output: {
         publicPath: 'auto',
       },
+      // For suppressing sourcemap warnings from @module-federation/utilities
+      ignoreWarnings: [/Failed to parse source map/],
     },
   },
 }

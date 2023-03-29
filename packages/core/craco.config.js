@@ -24,6 +24,10 @@ module.exports = {
               singleton: true,
               requiredVersion: dependencies['react-dom'],
             },
+            '@tadayosi/shared': {
+              singleton: true,
+              requiredVersion: '^0.1.0',
+            },
           },
         }),
       ],
