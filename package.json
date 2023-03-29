@@ -10,7 +10,15 @@
     "start:core": "yarn workspace core start",
     "start:plugin1": "yarn workspace plugin1 start",
     "start:plugin2": "yarn workspace plugin2 start",
-    "format": "yarn prettier --write ."
+    "build": "concurrently 'yarn:build:*'",
+    "build:core": "yarn workspace core build",
+    "build:plugin1": "yarn workspace plugin1 build",
+    "build:plugin2": "yarn workspace plugin2 build",
+    "format": "yarn prettier --write .",
+    "deploy": "concurrently -m 1 'yarn:deploy:*'",
+    "deploy:core": "yarn workspace core deploy",
+    "deploy:plugin1": "yarn workspace plugin1 deploy",
+    "deploy:plugin2": "yarn workspace plugin2 deploy"
   },
   "devDependencies": {
     "concurrently": "^7.6.0",

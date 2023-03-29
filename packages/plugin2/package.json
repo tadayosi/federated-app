@@ -5,7 +5,8 @@
   "scripts": {
     "start": "craco start",
     "build": "craco build",
-    "test": "craco test"
+    "test": "craco test",
+    "deploy": "surge build/"
   },
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.5",
@@ -41,6 +42,7 @@
   },
   "devDependencies": {
     "@craco/craco": "^7.1.0",
-    "@craco/types": "^7.1.0"
+    "@craco/types": "^7.1.0",
+    "surge": "^0.23.1"
   }
 }

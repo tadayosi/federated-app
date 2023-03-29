@@ -1,10 +1,13 @@
 import { importRemote, ImportRemoteOptions } from '@module-federation/utilities'
 
+const plugin2Url =
+  process.env.NODE_ENV === 'production' ? 'https://tadayosi-federated-app-plugin2.surge.sh' : 'http://localhost:3002'
+
 const remotes: ImportRemoteOptions[] = [
   {
     scope: 'plugin2',
     module: './plugin',
-    url: 'http://localhost:3002',
+    url: plugin2Url,
   },
 ]
 

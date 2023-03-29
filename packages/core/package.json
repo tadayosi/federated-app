@@ -5,7 +5,8 @@
   "scripts": {
     "start": "craco start",
     "build": "craco build",
-    "test": "craco test"
+    "test": "craco test",
+    "deploy": "surge build/"
   },
   "dependencies": {
     "@module-federation/utilities": "^1.4.0",
@@ -42,6 +43,7 @@
   },
   "devDependencies": {
     "@craco/craco": "^7.1.0",
-    "@craco/types": "^7.1.0"
+    "@craco/types": "^7.1.0",
+    "surge": "^0.23.1"
   }
 }
